@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
-import { useAuth } from '../context/AuthContext';
 import { orderAPI, userAPI } from '../services/api';
 import { useToast } from '../context/ToastContext';
 import CashfreePayment from '../components/CashfreePayment';
@@ -11,7 +10,6 @@ import Footer from '../components/Footer';
 const Address = () => {
   const navigate = useNavigate();
   const { cart, clearCart } = useCart();
-  const { user } = useAuth();
   const { initiatePayment } = CashfreePayment();
   const [submitting, setSubmitting] = useState(false);
   const { showToast } = useToast();
