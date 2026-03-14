@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ImageSlider from '../components/ImageSlider';
@@ -11,7 +10,6 @@ import LocationSection from '../components/LocationSection';
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const navigate = useNavigate();
 
   const handleSearch = (term) => {
     setSearchTerm(term);
