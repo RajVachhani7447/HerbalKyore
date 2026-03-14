@@ -2553,9 +2553,6 @@ iframe {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   }
 
-  .slider {
-  }
-
   .main-img-container {
     flex-direction: column;
     align-items: center;
